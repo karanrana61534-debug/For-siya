@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️ A Special Message for Siya Chauhan ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Segoe UI",sans-serif;
+}
+
+body{
+    overflow:hidden;
+    height:100vh;
+    background:linear-gradient(-45deg,#ff7eb3,#ff758c,#9b5de5,#6a4cff);
+    background-size:400% 400%;
+    animation:bgMove 15s ease infinite;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+/* Sparkles */
+
+.sparkle{
+    position:absolute;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    opacity:.8;
+    animation:twinkle linear infinite;
+}
+
+@keyframes twinkle{
+    0%,100%{transform:scale(.5);opacity:.2;}
+    50%{transform:scale(2);opacity:1;}
+}
+
+/* Floating Hearts */
+
+.heart{
+    position:absolute;
+    color:#fff;
+    font-size:20px;
+    animation:float linear infinite;
+    opacity:.75;
+    user-select:none;
+}
+
+@keyframes float{
+    from{
+        transform:translateY(100vh) scale(.7);
+        opacity:0;
+    }
+    20%{opacity:1;}
+    to{
+        transform:translateY(-120px) scale(1.5);
+        opacity:0;
+    }
+}
+
+/* Glass Card */
+
+.card{
+    width:min(92%,700px);
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    -webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:28px;
+    padding:45px 35px;
+    color:white;
+    text-align:center;
+    box-shadow:
+        0 0 30px rgba(255,255,255,.18),
+        0 0 60px rgba(255,105,180,.2);
+    animation:fadeUp 1.2s ease;
+    position:relative;
+    z-index:2;
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    inset:-2px;
+    border-radius:30px;
+    background:linear-gradient(45deg,#ff6ec4,#ffffff55,#9b5de5);
+    z-index:-1;
+    filter:blur(18px);
+    opacity:.45;
+}
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.title{
+    font-size:2rem;
+    margin-bottom:10px;
+}
+
+h2{
+    margin-bottom:25px;
+    font-size:2.2rem;
+}
+
+#typewriter{
+    white-space:pre-line;
+    font-size:1.08rem;
+    line-height:1.8;
+    min-height:290px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    margin-top:25px;
+    flex-wrap:wrap;
+    position:relative;
+}
+
+button{
+    border:none;
+    padding:15px 28px;
+    border-radius:40px;
+    font-size:1rem;
+    cursor:pointer;
+    transition:.3s;
+    font-weight:bold;
+    position:relative;
+}
+
+#yesBtn{
+    background:#ff4fa0;
+    color:white;
+    box-shadow:0 10px 25px rgba(255,20,147,.4);
+}
+
+#yesBtn:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 15px 35px rgba(255,20,147,.5);
+}
+
+#noBtn{
+    background:white;
+    color:#e91e63;
+    transition:left .25s, top .25s, transform .2s;
+}
+
+#celebration{
+    position:fixed;
+    inset:0;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(-45deg,#ff7eb3,#9b5de5,#ff5f95);
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+    color:white;
+    z-index:999;
+    overflow:hidden;
+}
+
+.celebrateCard{
+    width:min(92%,720px);
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(18px);
+    border-radius:28px;
+    padding:45px;
+    border:1px solid rgba(255,255,255,.25);
+    box-shadow:0 0 40px rgba(255,255,255,.25);
+    animation:fadeUp .8s ease;
+}
+
+.celebrateCard h1{
+    font-size:2.4rem;
+    margin-bottom:20px;
+}
+
+.celebrateCard p{
+    white-space:pre-line;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+@media(max-width:600px){
+
+.card{
+padding:30px 20px;
+}
+
+h2{
+font-size:1.8rem;
+}
+
+.title{
+font-size:1.5rem;
+}
+
+#typewriter{
+font-size:1rem;
+min-height:340px;
+}
+
+button{
+width:100%;
+}
+
+.buttons{
+flex-direction:column;
+align-items:center;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div id="hearts"></div>
+<div id="sparkles"></div>
+
+<div class="card">
+
+<div class="title">❤️ A Special Message for Siya Chauhan ❤️</div>
+
+<h2>Hey Siya... ❤️</h2>
+
+<p id="typewriter"></p>
+
+<div class="buttons">
+
+<button id="yesBtn">❤️ Yes, I Forgive You</button>
+
+<button id="noBtn">🙈 No</button>
+
+</div>
+
+</div>
+
+<div id="celebration">
+
+<div id="celebrateHearts"></div>
+
+<div class="celebrateCard">
+
+<h1>❤️ Thank You, Siya ❤️</h1>
+
+<p>
+Thank you for giving me another chance.
+
+I promise I'll be more careful with my words, respect your feelings, and never intentionally hurt you again.
+
+I'll do my best to protect your smile and your trust.
+
+You mean a lot to me.
+
+Forever Grateful. ❤️
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+// Typewriter
+
+const text=`I know I made a mistake.
+
+If I ever said anything that hurt you, I am truly sorry.
+
+I never wanted to hurt you or make you feel bad.
+
+I swear to God, I never intended to hurt your heart. Every word of this apology is genuine and comes from my heart.
+
+You are very special to me, and I don't want to lose you because of one mistake.
+
+If possible, please forgive me and give me one more chance.
+
+Your smile means more to me than you know.
+
+Will you forgive me? 🥹❤️`;
+
+let i=0;
+
+function type(){
+
+if(i<text.length){
+
+document.getElementById("typewriter").textContent+=text.charAt(i);
+
+i++;
+
+setTimeout(type,32);
+
+}
+
+}
+
+type();
+
+// Floating Hearts
+
+function createHeart(parent){
+
+const h=document.createElement("div");
+
+h.className="heart";
+
+h.innerHTML=Math.random()>0.5?"❤":"💖";
+
+h.style.left=Math.random()*100+"vw";
+
+h.style.fontSize=(16+Math.random()*22)+"px";
+
+h.style.animationDuration=(5+Math.random()*6)+"s";
+
+parent.appendChild(h);
+
+setTimeout(()=>h.remove(),11000);
+
+}
+
+setInterval(()=>createHeart(document.getElementById("hearts")),350);
+
+// Celebration hearts
+
+setInterval(()=>{
+
+if(document.getElementById("celebration").style.display==="flex"){
+
+createHeart(document.getElementById("celebration"));
+
+}
+
+},180);
+
+// Sparkles
+
+const sparkles=document.getElementById("sparkles");
+
+for(let i=0;i<90;i++){
+
+const s=document.createElement("div");
+
+s.className="sparkle";
+
+s.style.left=Math.random()*100+"vw";
+
+s.style.top=Math.random()*100+"vh";
+
+s.style.animationDuration=(1+Math.random()*3)+"s";
+
+s.style.animationDelay=Math.random()*3+"s";
+
+sparkles.appendChild(s);
+
+}
+
+// Moving No Button
+
+const noBtn=document.getElementById("noBtn");
+
+const buttons=document.querySelector(".buttons");
+
+buttons.style.position="relative";
+
+noBtn.style.position="relative";
+
+function moveButton(){
+
+const maxX=window.innerWidth<600?80:220;
+
+const maxY=window.innerWidth<600?80:90;
+
+const x=(Math.random()*maxX)-(maxX/2);
+
+const y=(Math.random()*maxY)-(maxY/2);
+
+noBtn.style.transform=`translate(${x}px,${y}px)`;
+
+}
+
+noBtn.addEventListener("mouseenter",moveButton);
+document.addEventListener("mousemove",(e)=>{
+
+const r=noBtn.getBoundingClientRect();
+
+const dx=e.clientX-(r.left+r.width/2);
+
+const dy=e.clientY-(r.top+r.height/2);
+
+const dist=Math.sqrt(dx*dx+dy*dy);
+
+if(dist<120){
+
+moveButton();
+
+}
+
+});
+
+// Yes
+
+document.getElementById("yesBtn").onclick=()=>{
+
+document.getElementById("celebration").style.display="flex";
+
+};
+
+</script>
+
+</body>
+</html>
